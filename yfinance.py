@@ -4,11 +4,11 @@ from yahoo_fin import stock_info as si
 
 # Set up Google Sheets credentials
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-credentials = ServiceAccountCredentials.from_json_keyfile_name("/Users/hengyul1/Desktop/Google Sheet Finance/credentials.json", scopes=scope)
+credentials = ServiceAccountCredentials.from_json_keyfile_name("`Your path to the credential json file`", scopes=scope)
 client = gspread.authorize(credentials)
 
 # Open the Google Sheet
-sheet = client.open('Etoro + Firstrade').worksheet("US")
+sheet = client.open('`name of the file`').worksheet("`name of the sheet`")
 
 # Get the stock tickers from A2:A17
 tickers = sheet.get('A2:A17')
