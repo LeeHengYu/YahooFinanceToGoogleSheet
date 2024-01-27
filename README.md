@@ -24,7 +24,12 @@ Set up a Google Cloud Platform (GCP) project:
 - Click on "Create credentials" and select "Service account".
 - Fill in the required information and click on "Create".
 - Download the JSON file containing your service account credentials.
-3. Store your credential json file somewhere in your folder.
+3. Store your credential json file in the working folder with `main_publish.py`.
+4. Add the google sheet API helper writer (an email address) editors.
+
+## Quick Start
+1. Change the constant variables in line 5 - 9
+2. Run the file
 
 ## Tickers
 Real-time quotes provided by **yahoo finance**
