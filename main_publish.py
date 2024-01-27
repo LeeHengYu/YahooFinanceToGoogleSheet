@@ -2,7 +2,7 @@ import gspread
 import yfinance as yf
 from oauth2client.service_account import ServiceAccountCredentials
 
-CREDENTIAL_PATH = "credentials.json" # relative path
+CREDENTIAL_PATH = "Full path to json file" # complete path
 SHEET_TITLE = 'Your Google Sheet Title'
 SHEET_NAME = 'Your Sheet Name'
 TICKER_RANGE = 'A1:A10' # 1d range
