@@ -1,5 +1,5 @@
 # Yahoo Finance To Google Sheet
-A python script that can fetch the current stock prices (inc. extended hours) by reading the tickers on a Google Sheet, and paste the prices back in Google Sheet.
+A python script that can fetch the current stock prices (excluding extended hours) by reading the tickers on a Google Sheet, and paste the prices back in Google Sheet.
 
 Useful when sometimes GOOGLEFINANCE function is not working, or the real-time prices are needed.
 
