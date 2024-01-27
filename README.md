@@ -3,16 +3,28 @@ A python script that can fetch the current stock prices (inc. extended hours) by
 
 Useful when sometimes GOOGLEFINANCE function is not working, or the real-time prices are needed.
 
-## Libraries
+## Libraries (pre-requisites)
 1. `oauth2client.service_account`
 2. `gspread`
-3. `yahoo_fin` (You may also use `yfinance`, but I don't know why that doesn't work on my machine.)
+3. `yfinance`
 
 ## Third-party service
 Google Sheet API
 
 ## Configuration
-Need to create a project in Google Cloud Console, get the credential json file and add the client email to common editor of the Google Sheet.
+Set up a Google Cloud Platform (GCP) project:
+
+1. Go to the GCP Console (https://console.cloud.google.com/).
+- Create a new project or select an existing one.
+- Enable the Google Sheets API:
+- In the left sidebar, click on "APIs & Services" > "Library".
+- Search for "Google Sheets API" and enable it.
+2. Create credentials:
+- In the left sidebar, click on "APIs & Services" > "Credentials".
+- Click on "Create credentials" and select "Service account".
+- Fill in the required information and click on "Create".
+- Download the JSON file containing your service account credentials.
+3. Store your credential json file somewhere in your folder.
 
 ## Tickers
 Real-time quotes provided by **yahoo finance**
